@@ -1,0 +1,41 @@
+﻿Actúa como arquitecto senior de automatización, backend en tiempo real y supervisión operativa.
+
+Necesito que implementes en L.I.N.D.A. un sistema de alertas en tiempo real para el líder o supervisor cuando ocurra una incidencia operativa relevante.
+
+OBJETIVO:
+Que el líder reciba alertas inmediatas sobre anomalías o incidencias de campo para actuar a tiempo.
+
+INCIDENCIAS QUE DEBEN GENERAR ALERTA:
+- visita sin foto
+- intento de cierre sin evidencia completa
+- check-in fuera de geocerca
+- desplazamiento improbable
+- secuencia física incoherente
+- exceso de gestiones telefónicas sin visitas válidas
+- cuenta marcada como visitada sin permanencia mínima
+- falla repetida de sincronización
+- domicilio incorrecto reportado
+- incidencia crítica definida por negocio
+
+CANALES DE ALERTA:
+- panel supervisor
+- WhatsApp
+- correo
+- opcionalmente SMS para severidad alta
+
+REGLAS:
+- las alertas deben dispararse en tiempo real o casi real
+- deben clasificarse por severidad: low, medium, high
+- deben incluir contexto suficiente
+- deben registrarse en base de datos
+- deben poder marcarse como atendidas o resueltas
+
+ENTREGABLE TÉCNICO:
+1. modelo de datos de alertas,
+2. reglas de disparo,
+3. flujo backend/n8n,
+4. payload de alerta,
+5. ejemplos de mensajes al líder,
+6. implementación base.
+
+Devuelve la solución en tono técnico profesional, lista para desarrollo.

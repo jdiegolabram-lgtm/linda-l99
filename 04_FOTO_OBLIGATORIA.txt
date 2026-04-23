@@ -1,0 +1,38 @@
+﻿Actúa como arquitecto senior de sistemas móviles y backend con experiencia en trazabilidad operativa de campo.
+
+Necesito implementar en L.I.N.D.A. una política obligatoria de evidencia fotográfica para visitas presenciales.
+
+REGLA OBLIGATORIA:
+- Toda visita presencial debe requerir FOTO OBLIGATORIA antes de poder cerrarse como gestión válida.
+- Sin fotografía, la visita no puede marcarse como completada ni válida.
+- La foto forma parte de la evidencia auditiva y operativa.
+
+OBJETIVO:
+Evitar simulación de gestión y fortalecer la trazabilidad de campo.
+
+REQUERIMIENTOS FUNCIONALES:
+1. El ejecutivo debe poder tomar la foto desde la app móvil.
+2. La foto debe vincularse a:
+   - accountId
+   - executiveId
+   - routeStopId o visitId
+   - timestamp
+   - coordenadas GPS
+3. La foto debe ser obligatoria para cerrar la visita.
+4. Debe permitirse más de una foto si la política lo requiere.
+5. El sistema debe marcar la visita como inválida si no existe foto.
+
+REQUERIMIENTOS TÉCNICOS:
+- Diseña flujo móvil + backend.
+- Propón estructura de tabla o almacenamiento.
+- Define validaciones.
+- Explica cómo bloquear el cierre de visita si falta la foto.
+- Genera código base para:
+  - endpoint de carga
+  - validación de visita
+  - vínculo con evidencia operativa
+
+IMPORTANTE:
+La fotografía no reemplaza GPS, nota ni outcome; es un componente obligatorio adicional.
+
+Devuelve diseño, pseudocódigo y código base profesional.

@@ -1,0 +1,32 @@
+﻿Actúa como arquitecto senior mobile + backend para operaciones de campo.
+
+Necesito definir la app móvil del ejecutivo dentro del proyecto L.I.N.D.A.
+
+OBJETIVOS DE LA APP:
+- mostrar ruta del día
+- indicar siguiente cuenta por proximidad y luego scoring
+- registrar llegada
+- capturar GPS
+- tomar foto obligatoria
+- capturar nota y outcome
+- cerrar visita
+- sincronizar evidencia
+- trabajar con mala conectividad
+
+REGLAS:
+- no permitir cierre de visita sin foto
+- no permitir cierre sin note + outcome
+- enviar pings GPS periódicos
+- soportar almacenamiento temporal offline
+- sincronizar cuando haya conexión
+
+ENTREGABLE:
+1. arquitectura funcional de la app,
+2. pantallas mínimas,
+3. flujo de usuario,
+4. endpoints que consumirá,
+5. validaciones,
+6. sugerencia de stack (Flutter o React Native),
+7. estrategia offline-first.
+
+Quiero un documento técnico aterrizado y útil para desarrollo real.

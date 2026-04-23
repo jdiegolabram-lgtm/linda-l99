@@ -1,0 +1,33 @@
+﻿Actúa como especialista senior en n8n y automatización de procesos operativos.
+
+Necesito que construyas el flujo de n8n para L.I.N.D.A. que procese incidencias y genere alertas al líder en tiempo real.
+
+OBJETIVO:
+Orquestar eventos críticos de campo sin cargar toda la lógica de negocio dentro de n8n.
+
+ALCANCE:
+- recibir evento desde backend
+- clasificar tipo de incidencia
+- consultar datos complementarios si hace falta
+- construir mensaje al líder
+- enviar alerta por canal correspondiente
+- registrar trazabilidad del envío
+- permitir fallback de canal si falla uno
+
+EVENTOS EJEMPLO:
+- visit_invalid
+- missing_photo
+- out_of_geofence
+- impossible_travel
+- sync_failure
+- suspicious_pattern
+
+REQUERIMIENTOS:
+- describe el flujo nodo por nodo
+- indica qué va en backend y qué va en n8n
+- propone payload estándar
+- incluye manejo de errores
+- incluye reintentos
+- incluye bitácora de auditoría
+
+Quiero un diseño robusto y listo para implementar.

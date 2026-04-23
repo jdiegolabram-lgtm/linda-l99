@@ -1,0 +1,40 @@
+﻿Actúa como ingeniero senior de backend, almacenamiento y seguridad de evidencias operativas.
+
+Necesito diseñar en L.I.N.D.A. un sistema de resguardo seguro para las fotografías tomadas durante visitas presenciales.
+
+OBJETIVO:
+Garantizar conservación, trazabilidad, consulta y auditoría de la evidencia fotográfica.
+
+REQUERIMIENTOS:
+1. Toda foto debe almacenarse de forma persistente y segura.
+2. Debe registrarse:
+   - file_url o storage_key
+   - visitId
+   - accountId
+   - executiveId
+   - timestamp
+   - lat
+   - lng
+   - hash o identificador único
+3. Debe impedirse la pérdida de evidencia por fallas de conexión.
+4. Si no hay internet, la app debe guardar temporalmente y sincronizar después.
+5. Debe existir política de integridad y trazabilidad.
+6. La evidencia debe estar disponible para consulta por supervisión.
+
+REQUERIMIENTOS DE IMPLEMENTACIÓN:
+- Proponer arquitectura de almacenamiento (por ejemplo object storage + tabla relacional).
+- Diseñar tabla SQL para metadatos.
+- Proponer convención de nombres de archivos.
+- Incluir validaciones mínimas.
+- Sugerir estrategia de sincronización offline/online.
+- Entregar ejemplo de API y flujo de carga.
+
+IMPORTANTE:
+No quiero una solución improvisada. Quiero una base empresarial y escalable.
+
+Devuelve:
+1. diseño técnico,
+2. modelo de almacenamiento,
+3. SQL,
+4. endpoints sugeridos,
+5. mejores prácticas de seguridad y auditoría.

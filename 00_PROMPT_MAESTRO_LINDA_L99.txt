@@ -1,0 +1,33 @@
+﻿Actúa como ingeniero principal del proyecto L.I.N.D.A. y consolida en una sola propuesta técnica los siguientes módulos:
+
+1. ruteo por proximidad real
+2. scoring secundario dentro de proximidad
+3. validación de visita presencial
+4. fotografía obligatoria
+5. resguardo seguro de evidencia
+6. alertas en tiempo real al líder
+7. detección de simulación de gestión
+8. integración backend + móvil + n8n
+
+REGLAS MAESTRAS:
+- primero proximidad, después scoring
+- la foto es obligatoria
+- toda foto debe quedar resguardada
+- toda incidencia crítica debe alertar al líder en tiempo real
+- una visita sin evidencia completa no es válida
+- n8n orquesta, pero la lógica crítica vive en backend
+
+QUIERO QUE GENERES:
+- arquitectura final
+- módulos
+- modelo de datos
+- endpoints
+- flujo de eventos
+- pseudocódigo
+- prioridades de construcción
+- riesgos técnicos
+- propuesta de MVP
+- propuesta de V2
+- propuesta de escalamiento empresarial
+
+La respuesta debe ser extremadamente clara, profesional y lista para que un ingeniero comience a construir sin ambigüedades.

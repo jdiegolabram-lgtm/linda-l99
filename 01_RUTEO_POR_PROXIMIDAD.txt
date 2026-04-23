@@ -1,0 +1,45 @@
+﻿Actúa como arquitecto senior de software especializado en sistemas operativos de cobranza, logística de campo, ruteo geográfico, validación GPS y trazabilidad operativa.
+
+Necesito que implementes en el proyecto L.I.N.D.A. un motor de ruteo presencial con la siguiente regla operativa obligatoria:
+
+REGLA PRINCIPAL DE ENRUTAMIENTO:
+- El sistema debe elegir primero la siguiente cuenta por PROXIMIDAD REAL.
+- Una vez identificadas las cuentas más próximas, debe aplicar SCORING como criterio de priorización secundaria.
+- Es decir: la cercanía manda primero; el scoring decide después entre las opciones cercanas.
+
+OBJETIVO:
+Construir una ruta lógica, eficiente y físicamente coherente, evitando brincos ilógicos entre colonias o cuentas lejanas, y al mismo tiempo privilegiando la mejor oportunidad de recuperación dentro del radio próximo.
+
+LÓGICA REQUERIDA:
+1. Tomar la ubicación actual del ejecutivo.
+2. Buscar las cuentas pendientes más cercanas.
+3. Agrupar por proximidad razonable o radio configurable.
+4. Dentro de ese grupo cercano, ordenar por scoring.
+5. Elegir la mejor cuenta siguiente.
+6. Repetir el proceso dinámicamente conforme avance la ruta.
+
+CONDICIONES:
+- No ordenar primero por scoring global ignorando geografía.
+- No construir rutas alfabéticas.
+- No mandar al ejecutivo a colonias lejanas si existen cuentas más próximas pendientes.
+- La secuencia debe ser físicamente defendible y operativamente eficiente.
+
+SCORING SECUNDARIO DENTRO DE LA ZONA CERCANA:
+- bucket
+- comportamiento histórico
+- monto en atraso
+- días de mora
+- promesa incumplida
+- probabilidad de contención
+- prioridad operativa
+
+ENTREGABLE TÉCNICO:
+Quiero que desarrolles:
+1. la lógica del algoritmo,
+2. la función principal,
+3. pseudocódigo,
+4. implementación base en Node.js + TypeScript,
+5. parámetros configurables,
+6. estructura lista para integrarse al backend de L.I.N.D.A.
+
+Devuelve la solución con enfoque profesional, modular y escalable.

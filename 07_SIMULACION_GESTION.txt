@@ -1,0 +1,32 @@
+﻿Actúa como arquitecto senior antifraude y analista de operaciones de campo.
+
+Necesito implementar en L.I.N.D.A. un módulo automático de detección de simulación de gestión.
+
+OBJETIVO:
+Detectar comportamientos operativos incompatibles con una gestión presencial real.
+
+SEÑALES A DETECTAR:
+- visitas en puntos lejanos con diferencia de tiempo imposible
+- velocidad de desplazamiento improbable
+- check-ins fuera de geocerca
+- cierres repetidos sin foto
+- muchas gestiones telefónicas para inflar productividad
+- múltiples cierres con permanencia mínima insuficiente
+- secuencia geográfica incoherente
+- evidencia débil o repetitiva
+
+REQUERIMIENTOS:
+1. definir reglas iniciales
+2. generar alertas clasificadas por severidad
+3. guardar alertas en base de datos
+4. notificar al líder en tiempo real en casos críticos
+5. dejar preparado el módulo para evolucionar a scoring de riesgo por ejecutivo
+
+ENTREGABLE:
+- diseño lógico
+- tabla simulation_alerts
+- función detectora
+- ejemplos de alertas
+- estrategia de integración con backend y n8n
+
+Devuelve la solución de manera profesional, escalable y auditable.

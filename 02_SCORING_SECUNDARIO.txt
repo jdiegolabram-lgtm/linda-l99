@@ -1,0 +1,36 @@
+﻿Actúa como ingeniero senior de backend y analítica operativa.
+
+Necesito que construyas el módulo de scoring del sistema L.I.N.D.A. bajo esta regla obligatoria:
+
+PRINCIPIO RECTOR:
+- El scoring NO define primero la ruta.
+- El scoring solo opera DESPUÉS de filtrar por proximidad.
+- Debe funcionar como criterio de desempate o priorización dentro del grupo geográfico más cercano.
+
+VARIABLES DEL SCORE:
+- bucket: 1_30, 31_60, 61_90
+- comportamiento histórico: bueno, regular, malo
+- monto en atraso
+- días de mora
+- promesa incumplida
+- riesgo estimado
+- posibilidad de contención
+- saldo vencido relevante
+
+REGLAS DE NEGOCIO:
+- bucket 61_90 tiene mayor peso
+- comportamiento malo incrementa prioridad
+- promesa incumplida incrementa prioridad
+- mayor monto en atraso incrementa prioridad, dependiendo del bucket
+- en bucket 1_30 debe pesar más el riesgo de deterioro futuro que solo el monto
+- en bucket 31_60 y 61_90 debe balancearse comportamiento con monto en atraso y posibilidad de recuperación
+
+REQUERIMIENTOS TÉCNICOS:
+1. Diseña una fórmula inicial de score configurable.
+2. Implementa pesos parametrizables.
+3. Permite ajustar ponderaciones sin tocar lógica crítica.
+4. Devuelve código limpio en TypeScript.
+5. Incluye ejemplo de entrada y salida.
+6. Incluye explicación de cómo integrarlo al motor de ruteo por proximidad.
+
+La salida debe ser profesional y lista para integrarse a producción.

@@ -1,0 +1,32 @@
+﻿Actúa como ingeniero senior especializado en validación operativa y antifraude de campo.
+
+Necesito que implementes en L.I.N.D.A. un motor de validación de visita presencial.
+
+UNA VISITA SOLO SERÁ VÁLIDA SI CUMPLE TODO LO SIGUIENTE:
+1. geocerca alcanzada
+2. permanencia mínima configurable
+3. fotografía obligatoria cargada
+4. nota o narrativa obligatoria
+5. outcome registrado
+6. secuencia coherente con la ruta
+7. timestamp consistente
+
+SI FALTA CUALQUIERA DE ESTOS ELEMENTOS:
+- la visita no debe marcarse como válida
+- debe enviarse incidencia al líder si corresponde
+- debe quedar traza de la invalidación
+
+REQUERIMIENTOS:
+- diseña reglas explícitas
+- crea función validateVisit()
+- devuelve true/false y motivos
+- genera estructura de respuesta clara
+- incluye validaciones configurables
+- deja lista la integración con route_stops y visit_evidence
+
+Quiero:
+1. diseño funcional,
+2. pseudocódigo,
+3. implementación TypeScript,
+4. casos de prueba,
+5. recomendaciones de endurecimiento operativo.
